@@ -1,0 +1,25 @@
+:root {
+  --flickr-pink: #f72585ff;
+  --byzantine: #b5179eff;
+  --purple: #7209b7ff;
+  --purple-2: #560badff;
+  --purple-3: #3A0CA3;
+  --trypan-blue: #480ca8ff;
+  --trypan-blue-2: rgb(28, 9, 73);
+  --persian-blue: #3f37c9ff;
+  --ultramarine-blue: #4361eeff;
+  --dodger-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
+  --light-purple: rgb(187, 167, 253);
+  --light-green: rgb(206, 255, 255);
+}
+
+body {
+  font-family: "Lucida Console", "Courier New", Courier, Monaco, monospace;
+  background-color: var(--trypan-blue-2);
+}
+
+.container {
+  padding-top: 1rem;
+  margin: auto;
+}

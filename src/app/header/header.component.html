@@ -1,0 +1,23 @@
+<div class="row justify-content-between">
+  <div class="col" id="logo-col">
+    <a routerLink="/" routerLinkActive="active"><img src="./assets/logo.svg" id="logo"></a>
+  </div>
+  <div class="col" id="navbar-col">
+    <nav class="navbar">
+      <a class="navbar-brand" routerLink="/" routerLinkActive="active"><span>Home</span></a>
+      <a class="navbar-brand" routerLink="/stake" routerLinkActive="active"><span>Stake</span></a>
+      <a class="navbar-brand" routerLink="/gems" routerLinkActive="active"><span>βetagems</span></a>
+      <a class="navbar-brand" routerLink="/about" routerlinkActive="active"><span>About</span></a>
+    </nav>
+  </div>
+  <div class="col" id="wallet-col"> 
+    <button type="button" class="btn btn-dark wallet-btn float-right" (click)="connectWallet()">
+      <div *ngIf="wallet.connected">
+        {{wallet.userAddress.substring(0, 14)}}
+      </div>
+      <div *ngIf="!wallet.connected">
+        Connect Wallet
+      </div>
+    </button>
+  </div>
+</div>

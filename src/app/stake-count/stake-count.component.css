@@ -1,0 +1,14 @@
+.stake-card {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  color: var(--light-green);
+  background-color: var(--persian-blue);
+  border: 0.1rem solid var(--dodger-blue);
+}
+.stake-amt {
+  color: var(--vivid-sky-blue);
+  background-color: var(--trypan-blue);
+  font-size: 3rem;
+}

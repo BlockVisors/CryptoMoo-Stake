@@ -1,0 +1,14 @@
+<div class="container gem-holder">
+  <div class="" *ngFor="let g of gemsList">
+    <div class="card gem-card text-center">
+      <div class="gem-img">
+        <a href="https://opensea.io/assets/0xc5802bcf619301bdc6b1b9eda4b6fd26e63339af/{{g.id}}" title="View your βetagem on OpenSea"><img src="{{g.img}}"></a>
+      </div>
+      <div title="The unique ID of your βetagem.">ID: <a href="https://etherscan.io/token/0xc5802bcf619301bdc6b1b9eda4b6fd26e63339af?a={{g.id}}" class="unstyled-link"><span class="gem-stat">{{g.id}}</span></a></div>
+      <div title="The amount of yfβ staked to create this βetagem.">Amount: <span class="gem-stat">{{g.amount.toFormat()}}</span></div>
+      <div title="The amount of time the underlying yfβ was staked.">Duration: <span class="gem-stat">{{g.duration}}</span></div>
+      <div title="Whether or not the underlying yfβ is still staked.">Alive: <span class="gem-stat">{{g.isStaked}}</span></div>
+      <div title="The address that originally mined this βetagem.">Miner: <a href="https://etherscan.io/address/{{g.minter}}" class="unstyled-link"><span class="gem-stat">{{g.minter.substring(0, 5)}}…</span></a></div>
+    </div>
+  </div>
+</div>

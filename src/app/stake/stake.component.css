@@ -1,0 +1,145 @@
+h1, h2, h3 {
+  color: white;
+  margin-top: 0.25rem;
+}
+
+.stake-card {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 45%;
+  margin-top: 2rem;
+  color: var(--light-purple);
+  background-color: var(--purple-3);
+  border: 2px solid var(--dodger-blue);
+}
+
+.gem-img {
+  margin-bottom: 0.5rem;
+}
+
+.stake-stats {
+  font-size: 1.25rem;
+}
+.stat {
+  color: var(--vivid-sky-blue);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.stats-holder {
+  margin-bottom: 0.5rem;
+  cursor: default;
+}
+
+.card-header {
+  border-bottom: 2px solid var(--purple-2);
+}
+
+.stake-card-body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-control {
+  background-color : var(--trypan-blue-2) !important; 
+  color: white !important;
+}
+
+.available {
+  margin-top: 0.75rem;
+  color: var(--light-purple);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.instructions {
+  margin-top: 0.5rem;
+  color: var(--vivid-sky-blue);
+  background-color: var(--trypan-blue-2);
+  padding-bottom: 0.1rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.instructions summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.instructions li {
+  color: white;
+}
+
+.blinking-cursor {
+  font-weight: bold;
+  color: var(--vivid-sky-blue);
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: var(--vivid-sky-blue);
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: var(--vivid-sky-blue);;
+  }
+}
+
+.btn-holder {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.transaction-btn {
+  margin: 0.25rem 0.25rem;
+  color: white;
+  font-weight: bold;
+  border: 1px solid var(--light-green);
+  font-size: 1.1rem;
+}
+.stake-btn {
+  background-color: var(--vivid-sky-blue);
+}
+.stake-btn:hover {
+  background-color: var(--dodger-blue);
+}
+.mine-btn {
+  background-color: var(--trypan-blue-2);
+}
+.mine-btn:hover {
+  background-color: var(--ultramarine-blue);
+}
+.withdraw-btn {
+  background-color: var(--byzantine);
+}
+.withdraw-btn:hover {
+  background-color: var(--purple);
+}
+
+.form-group {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .stake-card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .gem-img img {
+    width: 100px;
+    height: auto;
+  }
+  .btn-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .stake-btn, .mine-btn, .withdraw-btn {
+    display: block;
+  }
+}

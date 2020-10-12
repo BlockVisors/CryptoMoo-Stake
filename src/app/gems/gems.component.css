@@ -1,0 +1,47 @@
+.gem-holder {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gem-img {
+  margin-bottom: 0.5rem;
+}
+
+.gem-card {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.75rem 0.75rem;
+  color: var(--light-purple);
+  background-color: var(--purple-3);
+  border: 2px solid var(--dodger-blue);
+  line-height: 1.35rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.gem-card:hover {
+  filter: brightness(120%);
+}
+
+.gem-stat {
+  font-weight: bold;
+  color: var(--vivid-sky-blue);
+  font-size: 1.2rem;
+}
+.unstyled-link span {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .gem-img img {
+    width: 100px;
+    height: auto;
+  }
+}

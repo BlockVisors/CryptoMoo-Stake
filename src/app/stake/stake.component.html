@@ -1,0 +1,58 @@
+<div class="container gx-5">
+  <div class="row">
+    <div class="col card text-center stake-card">
+      <div class="card-header">
+        <h2>Growing βetagems</h2>
+      </div>
+      <div class="stake-card-body">
+        <div class="gem-img">
+          <img src="{{img}}">
+        </div>
+        <div class="stats-holder">
+          <div class="stake-stats" title="The amount of yfβ you are staking.">
+            Staking: <span class="stat">{{yfbStaked.toFormat()}}</span> yfβ
+          </div>
+          <div class="stake-stats" title="The number of blocks you have staked so far.">
+            Blocks staked: <span class="stat">{{stakeDuration.toFormat()}}</span>
+          </div>
+          <div class="stake-stats" title="Whether or not you have mined this Gem. Don't forget to mine!">
+            Minable: <span class="stat">{{! hasMinted}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col card text-center stake-card">
+      <div class="card-header">
+        <h2>Manage Stake</h2>
+      </div>
+      <div class="stake-card-body">
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <input id="stakeAmountInput" class="form-control" placeholder="0.0000" [(ngModel)]="stakeAmount" name="stakeAmountInput" autofocus>
+            </div>
+            <div class="available">Available:
+              {{yfbBalance.toFormat()}} yfβ
+            </div>
+            <details class="instructions">
+              <summary>Instructions<span class="blinking-cursor">|</span></summary>
+              <div class="text-left">
+                <ol>
+                  <li>Enter in the amount of yfβ you want to stake and click <b>Stake</b>. Approve the transactions.</li>
+                  <li>Click the <b>Mine Gem</b> button to mine a βetagem that represents your stake.</li>
+                  <li>When you want to stop staking, click <b>Withdraw All</b></li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </form>
+        <div class="btn-holder">
+          <button type="button" class="btn stake-btn transaction-btn" (click)="stake()" [class.disabled]="yfbStaked.isGreaterThan('0')">Stake</button>
+          <button type="button" class="btn mine-btn transaction-btn" (click)="mine()" [class.disabled]="hasMinted">Mine Gem</button>
+          <button type="button" class="btn withdraw-btn transaction-btn" (click)="withdraw()">Withdraw All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.about-holder {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  color: var(--light-purple);
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+  color: var(--vivid-sky-blue);
+}
+a:hover {
+  color: var(--light-green);
+}
